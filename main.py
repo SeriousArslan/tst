@@ -10,6 +10,6 @@ print "Connected by: " , addr #print the address of the person connected
 while True:
     data = conn.recv(1024) #how many bytes of data will the server receive
     print "Received: ", repr(data)
-    reply = raw_input("Reply: ") #server's reply to the client
+    reply = "Hi!" #server's reply to the client
     conn.sendall(reply)
 conn.close()
